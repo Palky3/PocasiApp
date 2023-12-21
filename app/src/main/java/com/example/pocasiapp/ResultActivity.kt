@@ -1,17 +1,5 @@
 package com.example.pocasiapp
 
-import android.annotation.SuppressLint
-import android.widget.ImageView
-import android.widget.Toast
-import com.example.pocasiapp.api.ApiClient
-import com.example.pocasiapp.models.WeatherData
-import com.example.pocasiapp.models.WeatherResponse
-import retrofit2.Call
-import retrofit2.Response
-import retrofit2.Callback
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-
 import android.os.AsyncTask
 import android.os.Bundle
 import android.view.View
@@ -21,28 +9,26 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject
 import java.net.URL
+import java.text.Normalizer
 import java.text.SimpleDateFormat
 import java.util.*
 
-/*import android.R
-import android.os.Bundle
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.example.pocasiapp.api.ApiClient
-import com.example.pocasiapp.models.WeatherData
-import java.util.**/
-
 
 class ResultActivity: AppCompatActivity() {
-    val CITY: String = "trebon,cz"
+    var CITY: String = ""
     val API: String = "0dcebe68aba2d3951ecb64e29b06f8f2" // Use API key
 
+    private val REGEX_UNACCENT = "\\p{InCombiningDiacriticalMarks}+".toRegex()
+
+    fun CharSequence.unaccent(): String {
+        val temp = Normalizer.normalize(this, Normalizer.Form.NFD)
+        return REGEX_UNACCENT.replace(temp, "")
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
+        CITY = intent.getStringExtra("city").toString().unaccent().lowercase()
         weatherTask().execute()
 
     }
@@ -91,9 +77,11 @@ class ResultActivity: AppCompatActivity() {
                 val windSpeed = wind.getString("speed")
                 val weatherDescription = weather.getString("description")
 
-                val address = jsonObj.getString("name")+", "+sys.getString("country")
+                var address = jsonObj.getString("name")+", "+sys.getString("country")
 
                 /* Populating extracted data into our views */
+                if (address.equals("Prague, CZ"))
+                    address = "Praha, CZ"
                 findViewById<TextView>(R.id.address).text = address
                 //findViewById<TextView>(R.id.updated_at).text =  updatedAtText
               //  findViewById<TextView>(R.id.status).text = weatherDescription.capitalize()

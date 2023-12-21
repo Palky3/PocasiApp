@@ -23,7 +23,7 @@
         android:id="@+id/button"
         android:layout_width="240dp"
         android:layout_height="80dp"
-        android:backgroundTint="#267F00"
+        android:backgroundTint="#1BC848"
         android:textSize="20sp"
         android:text="ZAČÍNÁME"
         android:textStyle="bold"

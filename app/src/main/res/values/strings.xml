@@ -1,3 +1,682 @@
 <resources>
     <string name="app_name">PocasiApp</string>
+
+    <string-array name="cities">
+        <item>Brno</item>
+        <item>Velké Meziříčí</item>
+        <item>Ostravice</item>
+        <item>Stará Ves nad Ondřejnicí</item>
+        <item>Stříbro</item>
+        <item>Vítkov</item>
+        <item>Opava</item>
+        <item>Praha</item>
+        <item>Vrchlabí</item>
+        <item>Písek</item>
+        <item>Oslavany</item>
+        <item>Plzeň</item>
+        <item>Moravská Třebová</item>
+        <item>Hradec Králové</item>
+        <item>Jirkov</item>
+        <item>Zbýšov</item>
+        <item>Smržovka</item>
+        <item>Česká Třebová</item>
+        <item>Ústí nad Orlicí</item>
+        <item>Bärenstein</item>
+        <item>Prostějov</item>
+        <item>Ústí nad Labem</item>
+        <item>Kroměříž</item>
+        <item>Olomouc</item>
+        <item>Broumov</item>
+        <item>Liberec</item>
+        <item>Ostrava</item>
+        <item>Jihlava</item>
+        <item>Kolín</item>
+        <item>Chrudim</item>
+        <item>Přerov</item>
+        <item>Starý Bohumín</item>
+        <item>Uherský Brod</item>
+        <item>Uherské Hradiště</item>
+        <item>Zlín</item>
+        <item>Mladá Boleslav</item>
+        <item>Kladno</item>
+        <item>Protivín</item>
+        <item>Čáslav</item>
+        <item>Neratovice</item>
+        <item>Hranice</item>
+        <item>Kutná Hora</item>
+        <item>Rychnov nad Kněžnou</item>
+        <item>Kralupy nad Vltavou</item>
+        <item>Šumperk</item>
+        <item>Rokycany</item>
+        <item>Žďár nad Sázavou</item>
+        <item>Turnov</item>
+        <item>Český Těšín</item>
+        <item>Tábor</item>
+        <item>Nymburk</item>
+        <item>Police</item>
+        <item>Dvůr Králové nad Labem</item>
+        <item>Třebíč</item>
+        <item>Jablonec nad Nisou</item>
+        <item>Boskovice</item>
+        <item>Varnsdorf</item>
+        <item>Havlíčkův Brod</item>
+        <item>Jičín</item>
+        <item>Jilemnice</item>
+        <item>Znojmo</item>
+        <item>Trutnov</item>
+        <item>Blansko</item>
+        <item>Jaroměř</item>
+        <item>Benešov</item>
+        <item>Milevsko</item>
+        <item>Český Krumlov</item>
+        <item>Jeseník</item>
+        <item>Břeclav</item>
+        <item>Ivančice</item>
+        <item>Děčín</item>
+        <item>Kostelec na Hané</item>
+        <item>Litoměřice</item>
+        <item>Strážnice</item>
+        <item>Jindřichův Hradec</item>
+        <item>Terezín</item>
+        <item>Mariánské Lázně</item>
+        <item>Humpolec</item>
+        <item>Sokolov</item>
+        <item>Rožnov pod Radhoštěm</item>
+        <item>Lázně Bohdaneč</item>
+        <item>Kralovice</item>
+        <item>Rakovník</item>
+        <item>Nový Jičín</item>
+        <item>Příbram</item>
+        <item>Frýdlant</item>
+        <item>Bakov nad Jizerou</item>
+        <item>Štětí</item>
+        <item>Krupka</item>
+        <item>Louny</item>
+        <item>Šternberk</item>
+        <item>Mnichovo Hradiště</item>
+        <item>Prachatice</item>
+        <item>Otrokovice</item>
+        <item>Staré Město</item>
+        <item>Vamberk</item>
+        <item>Tachov</item>
+        <item>Mníšek pod Brdy</item>
+        <item>Odry</item>
+        <item>Žatec</item>
+        <item>Nové Město na Moravě</item>
+        <item>Česká Kamenice</item>
+        <item>Nová Paka</item>
+        <item>Lysá nad Labem</item>
+        <item>Židlochovice</item>
+        <item>Sušice</item>
+        <item>Neveklov</item>
+        <item>Úvaly</item>
+        <item>Kraslice</item>
+        <item>Jáchymov</item>
+        <item>České Velenice</item>
+        <item>Dubi</item>
+        <item>Horoměřice</item>
+        <item>Železná Ruda</item>
+        <item>Mikulov</item>
+        <item>Milovice</item>
+        <item>Město</item>
+        <item>Horní Benešov</item>
+        <item>Frýdlant nad Ostravicí</item>
+        <item>Sobotka</item>
+        <item>Bor</item>
+        <item>Zákupy</item>
+        <item>Kravaře</item>
+        <item>Kraliky</item>
+        <item>Chrast</item>
+        <item>Mokrá Hora</item>
+        <item>Kunovice</item>
+        <item>Kbely</item>
+        <item>Hostivice</item>
+        <item>Tuchlovice</item>
+        <item>Ostrožská Nová Ves</item>
+        <item>Žďár nad Sázavou Druhý</item>
+        <item>Vyskov</item>
+        <item>Vsetín</item>
+        <item>Valašské Meziříčí</item>
+        <item>Třinec</item>
+        <item>Teplice</item>
+        <item>Svitavy</item>
+        <item>Strakonice</item>
+        <item>Slaný</item>
+        <item>Prosek</item>
+        <item>Pelhřimov</item>
+        <item>Pardubice</item>
+        <item>Otrokovice</item>
+        <item>Ostrov</item>
+        <item>Orlová</item>
+        <item>Náchod</item>
+        <item>Most</item>
+        <item>Modřany</item>
+        <item>Mělník</item>
+        <item>Litvínov</item>
+        <item>Libeň</item>
+        <item>Letňany</item>
+        <item>Krnov</item>
+        <item>Kopřivnice</item>
+        <item>Klatovy</item>
+        <item>Klášterec nad Ohří</item>
+        <item>Karviná</item>
+        <item>Karlovy Vary</item>
+        <item>Kadaň</item>
+        <item>Hodonín</item>
+        <item>Havířov</item>
+        <item>Frýdek-Místek</item>
+        <item>Chomutov</item>
+        <item>Cheb</item>
+        <item>České Budějovice</item>
+        <item>Česká Lípa</item>
+        <item>Bruntál</item>
+        <item>Braník</item>
+        <item>Brandýs nad Labem-Stara Boleslav</item>
+        <item>Bohumín</item>
+        <item>Bílina Kyselka</item>
+        <item>Bílina</item>
+        <item>Beroun</item>
+        <item>Černý Most</item>
+        <item>Zubří</item>
+        <item>Zruč nad Sázavou</item>
+        <item>Zlutice</item>
+        <item>Zlonice</item>
+        <item>Zliv</item>
+        <item>Zlaté Hory</item>
+        <item>Zirovnice</item>
+        <item>Železný Brod</item>
+        <item>Zebrák</item>
+        <item>Zdounky</item>
+        <item>Zdice</item>
+        <item>Zdanice</item>
+        <item>Zbiroh</item>
+        <item>Zastávka</item>
+        <item>Zásova</item>
+        <item>Zandov</item>
+        <item>Zámberk</item>
+        <item>Zacler</item>
+        <item>Zábřeh</item>
+        <item>Vyšší Brod</item>
+        <item>Vysoké Mýto</item>
+        <item>Vysočany</item>
+        <item>Vsetaty</item>
+        <item>Vřesina</item>
+        <item>Vrdy</item>
+        <item>Vrbno pod Pradědem</item>
+        <item>Vratimov</item>
+        <item>Vranovice</item>
+        <item>Vrane nad Vltavou</item>
+        <item>Vracov</item>
+        <item>Votice</item>
+        <item>Volyně</item>
+        <item>Volary</item>
+        <item>Vodňany</item>
+        <item>Vnorovy</item>
+        <item>Vlčnov</item>
+        <item>Vlašim</item>
+        <item>Vizovice</item>
+        <item>Vimperk</item>
+        <item>Vítkovice</item>
+        <item>Veverská Bítýška</item>
+        <item>Větrní</item>
+        <item>Veselí nad Moravou</item>
+        <item>Veselí nad Lužnicí</item>
+        <item>Věrovice</item>
+        <item>Vendryně</item>
+        <item>Velvary</item>
+        <item>Velký Týnec</item>
+        <item>Velký Šenov</item>
+        <item>Velký Osek</item>
+        <item>Velké Přítočno</item>
+        <item>Velké Popovice</item>
+        <item>Velké Pavlovice</item>
+        <item>Velké Opatovice</item>
+        <item>Velké Losiny</item>
+        <item>Velké Karlovice</item>
+        <item>Velké Hamry</item>
+        <item>Velké Březno</item>
+        <item>Velké Bílovice</item>
+        <item>Velká nad Veličkou</item>
+        <item>Velká Hleďsebe</item>
+        <item>Velká Bystřice</item>
+        <item>Velká Bíteš</item>
+        <item>Velim</item>
+        <item>Velešín</item>
+        <item>Vejprty</item>
+        <item>Vejprnice</item>
+        <item>Valtice</item>
+        <item>Valašské Klobouky</item>
+        <item>Valašská Bystřice</item>
+        <item>Vacenovice</item>
+        <item>Úštěk</item>
+        <item>Úpice</item>
+        <item>Uničov</item>
+        <item>Unhošť</item>
+        <item>Úhlířské Janovice</item>
+        <item>Uherský Ostroh</item>
+        <item>Týn nad Vltavou</item>
+        <item>Týniště nad Orlicí</item>
+        <item>Týnec nad Sázavou</item>
+        <item>Tvrdoňovice</item>
+        <item>Troubky</item>
+        <item>Trojanovice</item>
+        <item>Trmice</item>
+        <item>Trhové Sviny</item>
+        <item>Třešt</item>
+        <item>Třemošnice</item>
+        <item>Třemošná</item>
+        <item>Třeboň</item>
+        <item>Třebechovice pod Orebem</item>
+        <item>Tovačov</item>
+        <item>Toužim</item>
+        <item>Tlumačov</item>
+        <item>Tlučná</item>
+        <item>Tišnov</item>
+        <item>Telč</item>
+        <item>Tanvald</item>
+        <item>Svoboda nad Úpou</item>
+        <item>Světlá nad Sázavou</item>
+        <item>Suchdol nad Lužnicí</item>
+        <item>Studénka</item>
+        <item>Studená</item>
+        <item>Střížkov</item>
+        <item>Střelice</item>
+        <item>Stráž pod Ralskem</item>
+        <item>Strašice</item>
+        <item>Stráň</item>
+        <item>Stramberk</item>
+        <item>Stod</item>
+        <item>Stochov</item>
+        <item>Štíty</item>
+        <item>Štítná nad Vláří</item>
+        <item>Štěpánov</item>
+        <item>Štěpánkovice</item>
+        <item>Starý Plzeňec</item>
+        <item>Starý Jičín</item>
+        <item>Starýč</item>
+        <item>Staré Nechanice</item>
+        <item>Staré Město</item>
+        <item>Stará Paka</item>
+        <item>Staňkov</item>
+        <item>Stáhavy</item>
+        <item>Spálené Poříčí</item>
+        <item>Solnice</item>
+        <item>Sobotín</item>
+        <item>Soběslav</item>
+        <item>Smířice</item>
+        <item>Slušovice</item>
+        <item>Sluknov</item>
+        <item>Slavonice</item>
+        <item>Slavkov u Brna</item>
+        <item>Slavičín</item>
+        <item>Slatiňany</item>
+        <item>Slapanice</item>
+        <item>Skuteč</item>
+        <item>Skalná</item>
+        <item>Sítbořice</item>
+        <item>Sezimovo Ústí</item>
+        <item>Sezemice</item>
+        <item>Šenov</item>
+        <item>Semily</item>
+        <item>Sedlčany</item>
+        <item>Sázava</item>
+        <item>Satalice</item>
+        <item>Sardice</item>
+        <item>Sadská</item>
+        <item>Rýmařov</item>
+        <item>Rychvald</item>
+        <item>Rumburk</item>
+        <item>Rudolfov</item>
+        <item>Rudník</item>
+        <item>Rudná</item>
+        <item>Ruda nad Moravou</item>
+        <item>Rtyně v Podkrkonoší</item>
+        <item>Roztoky</item>
+        <item>Rozmitál pod Třemšínem</item>
+        <item>Rousínov</item>
+        <item>Roudnice nad Labem</item>
+        <item>Rotava</item>
+        <item>Rosice</item>
+        <item>Rokytnice v Orlických Horách</item>
+        <item>Rokytnice nad Jizerou</item>
+        <item>Rohatec</item>
+        <item>Říčany</item>
+        <item>Řevnice</item>
+        <item>Ratíškovice</item>
+        <item>Raspenava</item>
+        <item>Rapotín</item>
+        <item>Rakvice</item>
+        <item>Rajhrad</item>
+        <item>Rajec-Jestřebí</item>
+        <item>Psáry</item>
+        <item>Prusanky</item>
+        <item>Průhonice</item>
+        <item>Průsec</item>
+        <item>Proboštov</item>
+        <item>Přibyslav</item>
+        <item>Příbor</item>
+        <item>Přeštice</item>
+        <item>Přelouč</item>
+        <item>Pozorice</item>
+        <item>Povrly</item>
+        <item>Postřelmov</item>
+        <item>Postoloprty</item>
+        <item>Polná</item>
+        <item>Police nad Metují</item>
+        <item>Polesovice</item>
+        <item>Pohořelice</item>
+        <item>Podivín</item>
+        <item>Poděbrady</item>
+        <item>Podbořany</item>
+        <item>Počátky</item>
+        <item>Plumlov</item>
+        <item>Plesná</item>
+        <item>Plasy</item>
+        <item>Pláň</item>
+        <item>Planá nad Lužnicí</item>
+        <item>Planá</item>
+        <item>Píst</item>
+        <item>Petrvald</item>
+        <item>Petrovice u Karviné</item>
+        <item>Peruc</item>
+        <item>Pečky</item>
+        <item>Paskov</item>
+        <item>Palkovice</item>
+        <item>Pacov</item>
+        <item>Osek</item>
+        <item>Orechov</item>
+        <item>Opočno</item>
+        <item>Opatovice nad Labem</item>
+        <item>Oloví</item>
+        <item>Okrisky</item>
+        <item>Odolena Voda</item>
+        <item>Obrnice</item>
+        <item>Nýrsko</item>
+        <item>Nýřany</item>
+        <item>Nýdek</item>
+        <item>Nový Malín</item>
+        <item>Nový Hrozenkov</item>
+        <item>Nový Bydžov</item>
+        <item>Nový Bor</item>
+        <item>Novosedlice</item>
+        <item>Nové Strašecí</item>
+        <item>Nové Sedlo</item>
+        <item>Nové Město pod Smrkem</item>
+        <item>Nové Město nad Metují</item>
+        <item>Nové Hrady</item>
+        <item>Nová Včelnice</item>
+        <item>Nová Role</item>
+        <item>Nová Bystřice</item>
+        <item>Nivnice</item>
+        <item>Netolice</item>
+        <item>Nepomuk</item>
+        <item>Němčice nad Hanou</item>
+        <item>Nejdek</item>
+        <item>Nechanice</item>
+        <item>Navsi u Jablunkova</item>
+        <item>Napajedla</item>
+        <item>Náměšť nad Oslavou</item>
+        <item>Mutěnice</item>
+        <item>Mosty u Jablunkova</item>
+        <item>Morkov</item>
+        <item>Moravský Písek</item>
+        <item>Moravský Krumlov</item>
+        <item>Moravský Beroun</item>
+        <item>Moravské Budějovice</item>
+        <item>Moravská Nová Ves</item>
+        <item>Mohelnice</item>
+        <item>Modřice</item>
+        <item>Mnichovice</item>
+        <item>Mladé Buky</item>
+        <item>Mladá Vožice</item>
+        <item>Mirosov</item>
+        <item>Miroslav</item>
+        <item>Mimoň</item>
+        <item>Milotice</item>
+        <item>Milín</item>
+        <item>Mikulovice</item>
+        <item>Mikulášovice</item>
+        <item>Meziměstí</item>
+        <item>Meziboří</item>
+        <item>Město Albrechtice</item>
+        <item>Městec Králové</item>
+        <item>Merín</item>
+        <item>Malá Strana</item>
+        <item>Lužice</item>
+        <item>Luže</item>
+        <item>Lutín</item>
+        <item>Luka nad Jihlavou</item>
+        <item>Luhačovice</item>
+        <item>Ludgerovice</item>
+        <item>Luby</item>
+        <item>Lovosice</item>
+        <item>Loučovice</item>
+        <item>Loučná nad Desnou</item>
+        <item>Loštice</item>
+        <item>Lom u Mostu</item>
+        <item>Lomnice nad Popelkou</item>
+        <item>Loket</item>
+        <item>Litovel</item>
+        <item>Litomyšl</item>
+        <item>Lisov</item>
+        <item>Lipník nad Bečvou</item>
+        <item>Line</item>
+        <item>Libušín</item>
+        <item>Libochovice</item>
+        <item>Libčice nad Vltavou</item>
+        <item>Letovice</item>
+        <item>Letohrad</item>
+        <item>Lesná</item>
+        <item>Lednice</item>
+        <item>Ledenice</item>
+        <item>Ledeč nad Sázavou</item>
+        <item>Lázně Bělohrad</item>
+        <item>Lanžhot</item>
+        <item>Lanškroun</item>
+        <item>Kynšperk nad Ohří</item>
+        <item>Kyjov</item>
+        <item>Kvasice</item>
+        <item>Kuřim</item>
+        <item>Kunstat</item>
+        <item>Kunčice pod Ondřejníkem</item>
+        <item>Kryry</item>
+        <item>Křemže</item>
+        <item>Krásná Lípa</item>
+        <item>Králův Dvůr</item>
+        <item>Kozlovice</item>
+        <item>Kostelec nad Orlicí</item>
+        <item>Kostelec nad Labem</item>
+        <item>Kostelec nad Černými Lesy</item>
+        <item>Kostany</item>
+        <item>Kosmonosy</item>
+        <item>Koryčany</item>
+        <item>Kopidlno</item>
+        <item>Konice</item>
+        <item>Komárov</item>
+        <item>Kojetín</item>
+        <item>Kobyli</item>
+        <item>Koberice</item>
+        <item>Klobouky</item>
+        <item>Klimkovice</item>
+        <item>Klecany</item>
+        <item>Klášter</item>
+        <item>Kelč</item>
+        <item>Kdyně</item>
+        <item>Kašnářov</item>
+        <item>Karolinka</item>
+        <item>Karlín</item>
+        <item>Kardašova Řečice</item>
+        <item>Kaplice</item>
+        <item>Kameny Újezd</item>
+        <item>Kamenický Šenov</item>
+        <item>Kamenice nad Lipou</item>
+        <item>Kamenice</item>
+        <item>Jistebnice</item>
+        <item>Jiříkov</item>
+        <item>Jince</item>
+        <item>Jílové u Prahy</item>
+        <item>Jílové</item>
+        <item>Jevíčko</item>
+        <item>Jesenice</item>
+        <item>Jemnice</item>
+        <item>Jedovnice</item>
+        <item>Javorník</item>
+        <item>Jaroměřice nad Rokytnou</item>
+        <item>Janovice nad Úhlavou</item>
+        <item>Jablunkov</item>
+        <item>Jablunka</item>
+        <item>Jablonec v Podještědí</item>
+        <item>Jablonné nad Orlicí</item>
+        <item>Jablonec nad Jizerou</item>
+        <item>Ivanovice na Hané</item>
+        <item>Hustopeče</item>
+        <item>Hulín</item>
+        <item>Hukvaldy</item>
+        <item>Hrušovany u Brna</item>
+        <item>Hrušovany nad Jevišovkou</item>
+        <item>Hronov</item>
+        <item>Hrob</item>
+        <item>Hranice</item>
+        <item>Hrádek nad Nisou</item>
+        <item>Hrádek</item>
+        <item>Hradec</item>
+        <item>Hovorany</item>
+        <item>Hovězí</item>
+        <item>Hoštinec</item>
+        <item>Hostašovice</item>
+        <item>Horšovský Týn</item>
+        <item>Horovice</item>
+        <item>Horní Těrlicko</item>
+        <item>Horní Suchá</item>
+        <item>Horní Slavkov</item>
+        <item>Horní Počernice</item>
+        <item>Horní Plana</item>
+        <item>Horní Libina</item>
+        <item>Horní Jiřetín</item>
+        <item>Horní Bříza</item>
+        <item>Horní Bečva</item>
+        <item>Horka nad Moravou</item>
+        <item>Hořice</item>
+        <item>Horažďovice</item>
+        <item>Holysov</item>
+        <item>Holice</item>
+        <item>Holešov</item>
+        <item>Hodkovičky</item>
+        <item>Hodkovice nad Mohelkou</item>
+        <item>Hluk</item>
+        <item>Hlučín</item>
+        <item>Hluboká nad Vltavou</item>
+        <item>Hlubočky</item>
+        <item>Hlinsko</item>
+        <item>Heřmanův Městec</item>
+        <item>Hejnice</item>
+        <item>Hatě</item>
+        <item>Hanusovice</item>
+        <item>Halenkov</item>
+        <item>Háj ve Slezsku</item>
+        <item>Habartov</item>
+        <item>Golčův Jeníkov</item>
+        <item>Fulnek</item>
+        <item>Fryšták</item>
+        <item>Frycovice</item>
+        <item>Frýdek pod Radhoštěm</item>
+        <item>Frýdlant pod Radhoštěm</item>
+        <item>Františkovy Lázně</item>
+        <item>Duchcov</item>
+        <item>Dubňany</item>
+        <item>Drnovice</item>
+        <item>Doudleby nad Orlicí</item>
+        <item>Domažlice</item>
+        <item>Dolní Újezd</item>
+        <item>Dolní Poustevna</item>
+        <item>Dolní Počernice</item>
+        <item>Dolní Němčí</item>
+        <item>Dolní Lutyně</item>
+        <item>Dolní Libina</item>
+        <item>Dolní Kounice</item>
+        <item>Dolní Dobrouč</item>
+        <item>Dolní Černilov</item>
+        <item>Dolní Bousov</item>
+        <item>Dolní Bojanovice</item>
+        <item>Dolní Benešov</item>
+        <item>Dolany</item>
+        <item>Doksy</item>
+        <item>Dobšice</item>
+        <item>Dobruška</item>
+        <item>Dobrovice</item>
+        <item>Dobronín</item>
+        <item>Dobřichovice</item>
+        <item>Dobřany</item>
+        <item>Dobra</item>
+        <item>Dětmarovice</item>
+        <item>Desná</item>
+        <item>Dačice</item>
+        <item>Cvikov</item>
+        <item>Chýnov</item>
+        <item>Chvaletice</item>
+        <item>Chropyně</item>
+        <item>Chrastava</item>
+        <item>Chotěšov</item>
+        <item>Chotebor</item>
+        <item>Chodov</item>
+        <item>Chocen</item>
+        <item>Chlum u Třeboně</item>
+        <item>Chlumec nad Cidlinou</item>
+        <item>Chlumec</item>
+        <item>Chlumčany</item>
+        <item>Chabařovice</item>
+        <item>Český Dub</item>
+        <item>Česká Ves</item>
+        <item>Česká Skalice</item>
+        <item>Červený Kostelec</item>
+        <item>Červená Voda</item>
+        <item>Černosice</item>
+        <item>Černilov</item>
+        <item>Černá Hora</item>
+        <item>Čerčany</item>
+        <item>Čelákovice</item>
+        <item>Čeladná</item>
+        <item>Čejkovice</item>
+        <item>Bzenec</item>
+        <item>Bystřice pod Hostýnem</item>
+        <item>Bystřice nad Pernštejnem</item>
+        <item>Bystřice</item>
+        <item>Buštěhrad</item>
+        <item>Budyně nad Ohří</item>
+        <item>Budísov nad Budíšovkou</item>
+        <item>Bučovice</item>
+        <item>Buchlovice</item>
+        <item>Brusperk</item>
+        <item>Brtnice</item>
+        <item>Brodek u Přerova</item>
+        <item>Břidličná</item>
+        <item>Březová</item>
+        <item>Březnice</item>
+        <item>Brašov</item>
+        <item>Borsice</item>
+        <item>Borovan</item>
+        <item>Borohrádek</item>
+        <item>Bolatice</item>
+        <item>Bojkovice</item>
+        <item>Bohusovice nad Ohří</item>
+        <item>Bohunovice</item>
+        <item>Bochov</item>
+        <item>Bludov</item>
+        <item>Blučina</item>
+        <item>Blovice</item>
+        <item>Blatná</item>
+        <item>Bílovec</item>
+        <item>Benešov nad Ploučnicí</item>
+        <item>Benátky nad Jizerou</item>
+        <item>Bělá pod Bezdězem</item>
+        <item>Bečov</item>
+        <item>Bechyně</item>
+        <item>Batelov</item>
+        <item>Baška</item>
+        <item>Baňov</item>
+        <item>Aš</item>
+        <item>Albrechtice</item>
+        <item>Adamov</item>
+        <item>Kurort Oberwiesenthal</item>
+    </string-array>
 </resources>
