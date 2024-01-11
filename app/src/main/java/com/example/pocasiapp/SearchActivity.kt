@@ -25,12 +25,19 @@ class SearchActivity : AppCompatActivity() {
 
 
         val btn = findViewById<Button>(R.id.button)
+        //val historyBtn = findViewById<Button>(R.id.historyButton)
 
         btn.setOnClickListener(){
             val intent = Intent(this, ResultActivity::class.java)
             intent.putExtra("city", actv.text.toString())
             startActivity(intent)
         }
+
+        /*historyBtn.setOnClickListener(){
+            val intent = Intent(this, HistoryActivity::class.java)
+            //intent.putExtra("city", actv.text.toString())
+            startActivity(intent)
+        }*/
 
     }
 
